@@ -16,8 +16,8 @@ public interface CustomerInputChannel {
     String CUSTOMER_UPDATED_INPUT = "customerUpdatedInput";
 
     @Input(CUSTOMER_DELETED_INPUT)
-    SubscribableChannel productDeletedInput();
+    SubscribableChannel customerDeletedInput();
 
     @Input(CUSTOMER_UPDATED_INPUT)
-    SubscribableChannel productUpdatedInput();
+    SubscribableChannel customerUpdatedInput();
 }
