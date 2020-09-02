@@ -22,9 +22,9 @@ public class JerseyConfig extends ResourceConfig {
 	
 	private void registerProviders() {
 		register(ObjectMapperContextResolver.class);
-        register(ConstraintViolationExceptionMapper.class);
-        register(GenericExceptionMapper.class);
-        register(JsonMappingExceptionMapper.class, 1);
-        register(JsonParseExceptionMapper.class, 1);
+        	register(ConstraintViolationExceptionMapper.class);
+        	register(GenericExceptionMapper.class);
+        	register(JsonMappingExceptionMapper.class, 1);
+        	register(JsonParseExceptionMapper.class, 1);
 	}
 }
